@@ -1,0 +1,252 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+ul,
+ol {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+
+/* header */
+.h_wrap {
+	width: 100%; height: 400px;
+	background: url(../img/sea.jpg) no-repeat center;
+	background-size: cover;
+}
+
+header {
+	width: 100%;
+    /* background-color: rgb(4, 125, 181); */
+}
+header .inner {
+	width: 1180px;
+	height: 120px;
+    /* background-color: rgb(122, 181, 245); */
+	margin: 0px auto;
+	position: relative; /*자식 absolute 요소의 기준점 설정*/
+}
+header .inner h1 {
+	position: absolute;
+	left: 0px;
+	bottom: 15px;
+}
+header .inner h1 a {
+	font: bold 24px/1 "arial";
+	color: #444;
+}
+header .inner .util {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+}
+header .inner .util li {
+	float: left;
+}
+header .inner .util li a {
+	display: block;
+	font: 12px/1 "arial";
+	color: #ffffff;
+	padding: 0px 10px;
+}
+header .inner #gnb {
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+header .inner #gnb li {
+	float: left;
+}
+header .inner #gnb li a {
+	display: block; /*인라인 요소는 block설정하여 크기를 조절가능*/
+	font: bold 20px/1 "arial";
+	color: #ffffff;
+	padding: 30px 40px;
+	transition: all 0.5s;
+}
+header .inner #gnb li a:hover {
+	background: #b2d1f9;
+	color: #fff;
+}
+
+section {
+	width: 100%;
+	height: 730px; /*전체 브라우저 높이에서 120px만큼 빼줌*/
+	background: #ffffff;
+	position: relative;
+	overflow: hidden;
+	padding-top: 100px;
+	border: 1px solid;
+}
+
+section .inner {
+	width: 1180px;
+	margin:0 auto;
+	position: relative;
+}
+
+section .hi_1 {
+	width: 500px; 
+	height: 200px;
+	margin-bottom: 50px;
+	display: flex;
+	margin-left: 100px;
+	padding: 20px;
+}
+section .hi_1 span {
+	display: block;
+	width: 3px; height: 120px;
+	background: #145294;
+	margin-right: 20px;
+}
+section .hi_1  h2 {
+	font: 44px/1 "arial";
+	margin-bottom: 25px;
+	color: #355c86;
+}
+section .hi_1 p {
+	font: 18px/1 "맑은 고딕";
+	margin-bottom: 10px;
+}
+
+section .hi_1 strong {
+	font: 15px/1 "arial";
+	color: #4b90da;
+}
+
+.s_1 .icon {
+	width: 1180px;
+	display: flex;
+	/* background: #b2d1f9; */
+}
+.s_1 .icon li {
+	flex: 1;
+	border: 1px solid rgb(181, 179, 179);
+	margin: 10px;
+	text-align: center;
+	padding: 10px;
+}
+
+.s_1 .icon li p{
+	color: #000000;
+}
+
+.s_1 .icon li img {
+	width: 100%;
+}
+
+section .hi_2 {
+	width: 100%;
+}
+
+section .hi_2 .text {
+	width: 400px;
+	margin-bottom: 25px;
+}
+section .hi_2 .text em {
+	font-style: normal;
+	font: 20px/1.2 "arial";
+	color: #838282;
+}
+
+section .hi_2 .text h3 {
+	margin-top: 10px;
+	font: bold 30px/1 "arial" ;
+	color: #263463;
+}
+
+.s_2{
+	width: 100%;
+	display: flex;
+	margin: 0; padding: 0;
+	background-color: #f4f8fa;
+}
+.s_2>div:first-child {
+	flex:3;
+	overflow: hidden;
+	object-fit: cover;
+	padding: 80px;
+}
+.s_2>div:last-child {
+	flex: 4;
+}
+
+.s_2 .g img{
+	height: 100%;
+}
+
+.s_2  h2 {
+	font: bold 44px/1 "arial";
+	margin-bottom: 50px;
+	margin-top: 80px;
+	color: #000000;
+}
+
+.s_2  p {
+	width: 400px;
+	font: 18px/1.6 "맑은 고딕";
+	letter-spacing: -0.5px;
+	color: #5b5b5b;
+}
+.s_2 .text {
+	margin-bottom: 30px;
+	margin-left: 30px;
+	padding: 30px;
+}
+
+/* footer */
+footer {
+	width: 100%; height: 400px;
+	background: #226ec0;
+	padding: 100px 20px;
+}
+footer .inner {
+	width: 1180px;
+	margin: 0px auto;
+}
+
+footer .inner .upper {
+	width: 100%;
+	border-bottom: 1px solid #ffffff;
+	padding-bottom: 20px;
+}
+footer .inner .upper::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+footer .inner .upper h1 {
+	float: left;
+	font: bold 24px/1 "arial";
+	color: #666666;
+}
+footer .inner .upper ul {
+	float: right;
+}
+footer .inner .upper ul li {
+	float: left;
+	margin-left: 20px;
+}
+footer .inner .upper ul li a {
+	font: bold 14px/1 "arial";
+	color: #ffffff;
+}
+footer .inner .lower {
+	width: 100%;
+	padding-top: 20px;
+}
+footer .inner .lower address {
+	width: 100%;
+	font: 16px/1.3 "arial";
+	color: #ffffff;
+	margin-bottom: 20px;
+    /* text-align: center; */
+}
+footer .inner .lower p {
+	width: 100%;
+	font: 12px/1 "arial";
+	color: #ffffff;
+}
